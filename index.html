@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="onLoad()">
+    <div class='card'>
+        <div class='card-header'>
+          <div id="location" class='card-header-city'></div>
+          <div id="date" class='card-header-hour'></div>
+        </div>
+        <div class='card-body'>
+          <img id="iconWeather" class='card-body-image' src="" alt="Icono del clima"></img>
+          <p id="description" class='card-body-text'></p>
+        </div>
+        <div class='card-footer'>
+          <div class='card-footer-content'>
+            <div class='card-footer-content-info'>
+              <em class='fa-solid fa-wind'></em>
+              <p class='card-footer-content-info-text'><spam id="speed"></spam> m/s</p>
+            </div>
+            <div class='card-footer-content-info'>
+              <em class='fa-solid fa-droplet'></em>
+              <p class='card-footer-content-info-text'><spam id="humidity"></spam>%</p>
+            </div>
+          </div>
+          <div class='card-footer-content-temperature'>
+            <p><span id="temperature"></span>&deg;</p>
+          </div>
+        </div>
+      </div>
+      <p class="copy">Create by Heider Gutierrez</p>
+    <script src="script.js"></script>
+</body>
+</html>
